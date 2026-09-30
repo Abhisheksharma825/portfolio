@@ -40,12 +40,7 @@ portfolio/
 └── README.md
 ```
 
-## Before publishing
 
-1. Put your real resume at `assets/resume.pdf`.
-2. Put your real certificate PDFs in `assets/certificates/` and update the filenames in `index.html`.
-3. Replace project GitHub/live-demo links with the exact repository URLs you want visitors to use.
-4. Open `index.html` locally to test, or deploy the folder to Netlify/GitHub Pages.
 
 No npm install or build command is required.
 #
