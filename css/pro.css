@@ -1,0 +1,50 @@
+/* Pro layer: polish + extra interactivity */
+:root{--grad:linear-gradient(120deg,var(--primary),var(--primary-2))}
+::selection{background:var(--primary);color:#04121a}
+#preloader{position:fixed;inset:0;z-index:5000;display:grid;place-content:center;justify-items:center;gap:18px;background:var(--bg);font:700 2rem Space Grotesk,sans-serif;transition:opacity .5s,visibility .5s}
+#preloader b{color:var(--primary)}
+#preloader i{width:140px;height:3px;border-radius:9px;background:var(--border);position:relative;overflow:hidden}
+#preloader i::after{content:"";position:absolute;inset:0;background:var(--grad);animation:load 1s ease-in-out infinite}
+#preloader.done{opacity:0;visibility:hidden}
+@keyframes load{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+#particles{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.55}
+main,.site-footer{position:relative;z-index:1}
+.section-alt{background:color-mix(in srgb,var(--bg-alt) 88%,transparent)}
+.scroll-progress{background:var(--grad)!important;height:3px!important}
+.hero h1 span,.section-title span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{position:relative;overflow:hidden;transition:transform .2s,box-shadow .3s}
+.btn:not(.btn-outline){background:var(--grad)!important;color:#04121a!important;box-shadow:0 10px 30px color-mix(in srgb,var(--primary) 30%,transparent)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s}
+.btn:hover::after{transform:translateX(120%)}
+.cmdk-btn{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 12px;border:1px solid var(--border);background:var(--surface);border-radius:12px;color:var(--muted);font-size:.85rem;cursor:pointer;transition:.25s}
+.cmdk-btn:hover{color:var(--text);border-color:var(--primary)}
+kbd{font:600 .7rem ui-monospace,monospace;padding:2px 6px;border:1px solid var(--border);border-radius:6px;background:var(--surface-soft);color:var(--muted)}
+.tech-marquee{overflow:hidden;border-block:1px solid var(--border);background:var(--surface);padding:16px 0;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;gap:14px;width:max-content;animation:marquee 32s linear infinite}
+.tech-marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{padding:8px 18px;border:1px solid var(--border);border-radius:999px;font:600 .85rem Space Grotesk,sans-serif;color:var(--muted);white-space:nowrap;transition:.25s}
+.marquee-track span:hover{color:var(--primary);border-color:var(--primary)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.project-card,.stat-card,.skill-category,.certificate-card,.info-box{transition:transform .25s ease,border-color .3s,box-shadow .3s;will-change:transform}
+.project-card:hover,.skill-category:hover,.certificate-card:hover{border-color:color-mix(in srgb,var(--primary) 60%,transparent);box-shadow:0 20px 60px color-mix(in srgb,var(--primary) 14%,transparent)}
+.project-card{position:relative}
+.project-card::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:2;opacity:0;transition:opacity .3s;background:radial-gradient(360px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--primary) 16%,transparent),transparent 60%)}
+.project-card:hover::before{opacity:1}
+.dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:900;display:flex;flex-direction:column;gap:12px}
+.dots button{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--muted);background:transparent;cursor:pointer;padding:0;position:relative;transition:.25s}
+.dots button.on{background:var(--primary);border-color:var(--primary);transform:scale(1.3)}
+.dots button::after{content:attr(data-label);position:absolute;right:20px;top:50%;transform:translateY(-50%);padding:3px 9px;border-radius:7px;background:var(--surface-solid);border:1px solid var(--border);font-size:.72rem;white-space:nowrap;opacity:0;pointer-events:none;transition:.2s}
+.dots button:hover::after{opacity:1}
+dialog.cmdk{margin:12vh auto auto;width:min(560px,calc(100% - 32px));padding:0;border:1px solid var(--border);border-radius:18px;background:var(--surface-solid);color:var(--text);box-shadow:0 40px 120px rgba(0,0,0,.5);overflow:hidden}
+dialog.cmdk::backdrop{background:rgba(3,6,14,.6);backdrop-filter:blur(6px)}
+#cmdk-input{width:100%;padding:18px 20px;border:0;border-bottom:1px solid var(--border);background:transparent;color:var(--text);outline:0;font-size:1rem}
+#cmdk-list{list-style:none;max-height:320px;overflow:auto;padding:8px}
+#cmdk-list li{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:10px;cursor:pointer;color:var(--muted)}
+#cmdk-list li i{width:18px;color:var(--primary);text-align:center}
+#cmdk-list li small{margin-left:auto;font-size:.72rem;opacity:.7}
+#cmdk-list li.sel{background:var(--surface-soft);color:var(--text)}
+.cmdk-hint{padding:10px 16px;border-top:1px solid var(--border);font-size:.75rem;color:var(--muted);display:flex;gap:6px;align-items:center}
+.cmdk-hint kbd{margin-left:8px}
+@media(max-width:1100px){.cmdk-btn span,.cmdk-btn kbd{display:none}.cmdk-btn{width:42px;justify-content:center;padding:0}}
+@media(max-width:900px){.dots{display:none}}
+@media(prefers-reduced-motion:reduce){.marquee-track,#preloader i::after{animation:none}#particles{display:none}}

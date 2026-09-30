@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abhishek Sharma — Computer Science student, web developer, cybersecurity enthusiast and AI/ML learner.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Abhishek Sharma | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pro.css">
+</head>
+<body>
+  <div id="preloader" aria-hidden="true"><span>Abhishek<b>.</b></span><i></i></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="logo" href="#hero" aria-label="Abhishek Sharma home">Abhishek<span>.</span></a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link active" href="#hero">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#certificates">Certificates</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="cmdk-btn" id="cmdk-open" type="button" aria-label="Open command menu"><i class="fa-solid fa-magnifying-glass"></i><span>Quick nav</span><kbd>Ctrl K</kbd></button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+        <i class="fa-solid fa-sun"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow"><span class="status-dot"></span> Available for opportunities</span>
+          <p class="intro">Hello, I'm</p>
+          <h1>Abhishek <span>Sharma</span></h1>
+          <h2>I build <span id="typing-text">interactive web experiences</span><span class="typing-cursor">|</span></h2>
+          <p class="description">
+            B.Tech Computer Science student focused on web development, cybersecurity and AI/ML.
+            I like turning ideas into responsive, practical and user-friendly digital products.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn" href="assets/resume.pdf" download onclick="return handleResume(event)"><i class="fa-solid fa-download"></i> Download Resume</a>
+            <a class="btn btn-outline" href="#projects"><i class="fa-solid fa-code"></i> View Projects</a>
+          </div>
+          <div class="social-icons" aria-label="Social links">
+            <a href="https://github.com/Abhisheksharma825" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-sharma-ba6163318/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:abhisheksharma.h2005@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-frame">
+            <img src="assets/images/myprofessionalpicture.jpg" alt="Abhishek Sharma" loading="eager">
+            <div class="floating-card card-code"><i class="fa-solid fa-code"></i><span>Build</span></div>
+            <div class="floating-card card-security"><i class="fa-solid fa-shield-halved"></i><span>Secure</span></div>
+            <div class="floating-card card-ai"><i class="fa-solid fa-brain"></i><span>Learn AI</span></div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to about section"><span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i></a>
+    </section>
+
+        <div class="tech-marquee" aria-label="Technologies"><div class="marquee-track"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>Python</span><span>C++</span><span>MongoDB</span><span>MySQL</span><span>Linux</span><span>Nmap</span><span>Wireshark</span><span>Git</span></div></div>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="image-card">
+            <img src="assets/images/myprofessionalpicture.jpg" alt="Abhishek Sharma" loading="lazy">
+            <div class="image-card-label"><span class="status-dot"></span> CSE Student • Developer</div>
+          </div>
+        </div>
+        <div class="about-content reveal reveal-delay-1">
+          <span class="section-kicker">01 / About</span>
+          <h2 class="section-title left">Curious mind. <span>Builder mindset.</span></h2>
+          <p>
+            I'm Abhishek Sharma, a Computer Science student who enjoys building modern interfaces,
+            experimenting with backend technologies and learning how systems can be made more secure.
+          </p>
+          <p>
+            My current interests sit at the intersection of <strong>web development, cybersecurity and AI/ML</strong>.
+            I learn best by creating projects, participating in challenges and turning concepts into working demos.
+          </p>
+          <div class="about-info">
+            <div class="info-box"><i class="fa-solid fa-graduation-cap"></i><div><small>Education</small><strong>B.Tech CSE</strong></div></div>
+            <div class="info-box"><i class="fa-solid fa-building-columns"></i><div><small>College</small><strong>GNIT, Kolkata</strong></div></div>
+            <div class="info-box"><i class="fa-solid fa-location-dot"></i><div><small>Based in</small><strong>Kolkata, India</strong></div></div>
+            <div class="info-box"><i class="fa-solid fa-envelope"></i><div><small>Email</small><strong>abhisheksharma.h2005@gmail.com</strong></div></div>
+          </div>
+          <a class="text-link" href="#terminal"><i class="fa-solid fa-terminal"></i> Try my interactive terminal</a>
+        </div>
+      </div>
+
+      <div class="container stats-grid" data-counter-section>
+        <div class="stat-card reveal"><strong class="counter" data-target="3">0</strong><span>Core focus areas</span></div>
+        <div class="stat-card reveal reveal-delay-1"><strong class="counter" data-target="3">0</strong><span>Featured projects</span></div>
+        <div class="stat-card reveal reveal-delay-2"><strong class="counter" data-target="10">0</strong><span>Technologies explored</span></div>
+        <div class="stat-card reveal reveal-delay-3"><strong class="counter" data-target="2">0</strong><span>Hackathon / community experiences</span></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">02 / Skills</span>
+          <h2 class="section-title">Tools I <span>work with</span></h2>
+          <p>Filter by area or hover over a skill to see my current focus level.</p>
+        </div>
+
+        <div class="filter-tabs reveal" role="tablist" aria-label="Skill categories">
+          <button class="filter-btn active" data-skill-filter="all" role="tab">All</button>
+          <button class="filter-btn" data-skill-filter="frontend" role="tab">Frontend</button>
+          <button class="filter-btn" data-skill-filter="backend" role="tab">Backend</button>
+          <button class="filter-btn" data-skill-filter="programming" role="tab">Programming</button>
+          <button class="filter-btn" data-skill-filter="security" role="tab">Security</button>
+          <button class="filter-btn" data-skill-filter="ai" role="tab">AI / ML</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <article class="skill-category reveal" data-skill-category="frontend">
+            <div class="skill-category-head"><i class="fa-solid fa-palette"></i><h3>Frontend</h3></div>
+            <div class="skill-bars">
+              <div class="skill-row"><div><span>HTML</span><b>90%</b></div><div class="skill-track"><span style="--level:90%"></span></div></div>
+              <div class="skill-row"><div><span>CSS</span><b>85%</b></div><div class="skill-track"><span style="--level:85%"></span></div></div>
+              <div class="skill-row"><div><span>JavaScript</span><b>80%</b></div><div class="skill-track"><span style="--level:80%"></span></div></div>
+              <div class="skill-row"><div><span>React</span><b>65%</b></div><div class="skill-track"><span style="--level:65%"></span></div></div>
+            </div>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-1" data-skill-category="backend">
+            <div class="skill-category-head"><i class="fa-solid fa-server"></i><h3>Backend</h3></div>
+            <div class="skill-bars">
+              <div class="skill-row"><div><span>Node.js</span><b>70%</b></div><div class="skill-track"><span style="--level:70%"></span></div></div>
+              <div class="skill-row"><div><span>Express.js</span><b>65%</b></div><div class="skill-track"><span style="--level:65%"></span></div></div>
+            </div>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-2" data-skill-category="programming">
+            <div class="skill-category-head"><i class="fa-solid fa-terminal"></i><h3>Programming</h3></div>
+            <div class="skill-bars">
+              <div class="skill-row"><div><span>C++</span><b>80%</b></div><div class="skill-track"><span style="--level:80%"></span></div></div>
+              <div class="skill-row"><div><span>Python</span><b>75%</b></div><div class="skill-track"><span style="--level:75%"></span></div></div>
+              <div class="skill-row"><div><span>C</span><b>70%</b></div><div class="skill-track"><span style="--level:70%"></span></div></div>
+              <div class="skill-row"><div><span>Java</span><b>60%</b></div><div class="skill-track"><span style="--level:60%"></span></div></div>
+            </div>
+          </article>
+
+          <article class="skill-category reveal" data-skill-category="security">
+            <div class="skill-category-head"><i class="fa-solid fa-shield-halved"></i><h3>Cybersecurity</h3></div>
+            <div class="skill-tags"><span>Linux</span><span>Nmap</span><span>Wireshark</span><span>Networking</span><span>SIEM concepts</span></div>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-1" data-skill-category="ai">
+            <div class="skill-category-head"><i class="fa-solid fa-brain"></i><h3>AI / ML</h3></div>
+            <div class="skill-tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>ML fundamentals</span><span>NLP concepts</span></div>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-2" data-skill-category="backend">
+            <div class="skill-category-head"><i class="fa-solid fa-database"></i><h3>Database & Tools</h3></div>
+            <div class="skill-tags"><span>MongoDB</span><span>MySQL</span><span>Git</span><span>GitHub</span><span>VS Code</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">03 / Projects</span>
+          <h2 class="section-title">Things I've <span>built</span></h2>
+          <p>Click a project for details, or filter the list by technology area.</p>
+        </div>
+
+        <div class="filter-tabs project-filters reveal" role="tablist" aria-label="Project filters">
+          <button class="filter-btn active" data-project-filter="all">All</button>
+          <button class="filter-btn" data-project-filter="web">Web</button>
+          <button class="filter-btn" data-project-filter="javascript">JavaScript</button>
+          <button class="filter-btn" data-project-filter="cybersecurity">Cybersecurity</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card reveal" data-project-category="web javascript" data-project="portfolio">
+            <div class="project-image-wrap">
+              <img src="assets/images/portfolio.png" alt="Portfolio website preview" loading="lazy">
+              <div class="project-overlay"><button class="icon-btn project-open" data-project-id="portfolio" aria-label="Open portfolio project"><i class="fa-solid fa-arrow-up-right-from-square"></i></button></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Web</span><span>2026</span></div>
+              <h3>Personal Portfolio Website</h3>
+              <p>Responsive developer portfolio redesigned with interactive navigation, project filtering, animations, theme switching and accessible UI patterns.</p>
+              <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-buttons"><button class="btn small project-open" data-project-id="portfolio">View Details</button><a class="btn small btn-outline" href="https://github.com/Abhisheksharma825" target="_blank" rel="noreferrer">GitHub</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1"
+  data-project-category="web javascript"
+  data-project="buywait">
+
+  <div class="project-image-wrap">
+    <img
+      src="assets/images/buy-and-wait.jpg"
+      alt="Buy & Wait project preview"
+      loading="lazy"
+    >
+
+    <div class="project-overlay">
+      <button
+        class="icon-btn project-open"
+        data-project-id="buywait"
+        aria-label="Open Buy & Wait project"
+      >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="project-content">
+
+    <div class="project-meta">
+      <span>Web Development</span>
+      <span>JavaScript</span>
+    </div>
+
+    <h3>Buy & Wait</h3>
+
+    <p>
+      A modern shopping experience designed to help users explore products,
+      compare options and make thoughtful purchase decisions without unnecessary impulse buying.
+    </p>
+
+    <div class="tech-stack">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+
+    <div class="project-buttons">
+      <button
+        class="btn small project-open"
+        data-project-id="buywait"
+      >
+        View Details
+      </button>
+
+      <a
+        class="btn small btn-outline"
+        href="https://github.com/Abhisheksharma825"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub
+      </a>
+    </div>
+
+  </div>
+</article>
+
+          <article class="project-card reveal reveal-delay-2" data-project-category="web javascript cybersecurity" data-project="prompt-heist">
+            <div class="project-image-wrap generated-preview">
+              <img src="assets/images/prompt-heist.svg" alt="Prompt Heist cyber vault preview" loading="lazy">
+              <div class="project-overlay"><button class="icon-btn project-open" data-project-id="prompt-heist" aria-label="Open Prompt Heist project"><i class="fa-solid fa-arrow-up-right-from-square"></i></button></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Hackathon</span><span>Cyber UI</span></div>
+              <h3>Prompt Heist</h3>
+              <p>A browser game where natural-language commands control a futuristic AI vault, combining puzzle mechanics with a cybersecurity-inspired interface.</p>
+              <div class="tech-stack"><span>HTML</span><span>CSS</span><span>Vanilla JS</span></div>
+              <div class="project-buttons"><button class="btn small project-open" data-project-id="prompt-heist">View Details</button><a class="btn small btn-outline" href="https://gamzyfy.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">04 / Experience</span>
+          <h2 class="section-title">Learning through <span>doing</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="timeline-content expandable">
+              <button class="timeline-toggle" type="button"><span><small>2026</small><strong>Cisco Cyber Smart AI Program</strong><em>NIIT Foundation</em></span><i class="fa-solid fa-plus"></i></button>
+              <div class="timeline-details"><p>Cybersecurity-focused training covering security fundamentals, networking, Linux and AI applications.</p><ul><li>Security concepts</li><li>Networking fundamentals</li><li>AI + cybersecurity awareness</li></ul></div>
+            </div>
+          </article>
+          <article class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-marker"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="timeline-content expandable">
+              <button class="timeline-toggle" type="button"><span><small>2026</small><strong>Full Stack Development Internship</strong><em>EduSkills</em></span><i class="fa-solid fa-plus"></i></button>
+              <div class="timeline-details"><p>Worked through practical web-development tasks using frontend technologies and Node.js concepts.</p><ul><li>Frontend development</li><li>JavaScript</li><li>Backend fundamentals</li></ul></div>
+            </div>
+          </article>
+          <article class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-marker"><i class="fa-solid fa-code-branch"></i></div>
+            <div class="timeline-content expandable">
+              <button class="timeline-toggle" type="button"><span><small>2026</small><strong>GirlScript Summer of Code</strong><em>Ambassador / Community</em></span><i class="fa-solid fa-plus"></i></button>
+              <div class="timeline-details"><p>Participated in an open-source community environment and promoted developer participation.</p><ul><li>Open-source awareness</li><li>Developer community</li><li>Collaboration</li></ul></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certificates">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="section-kicker">05 / Certificates</span>
+      <h2 class="section-title">Proof of <span>learning</span></h2>
+      <p>Certifications, training programs and credentials I've earned.</p>
+    </div>
+
+    <div class="certificate-grid">
+
+      <!-- Cisco Cyber Smart AI -->
+      <article class="certificate-card reveal">
+        <div class="certificate-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+
+        <div>
+          <small>2026 • NIIT Foundation</small>
+          <h3>Cisco Cyber Smart AI</h3>
+          <p>
+            Cybersecurity and AI-focused training program.
+          </p>
+        </div>
+
+        <a
+          class="text-link"
+          href="https://www.linkedin.com/in/abhishek-sharma-ba6163318/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View credential
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+
+      <!-- AWS Data Engineering -->
+      <article class="certificate-card reveal reveal-delay-1">
+        <div class="certificate-icon">
+          <i class="fa-brands fa-aws"></i>
+        </div>
+
+        <div>
+          <small>2026 • EduSkills • AWS</small>
+          <h3>AWS Data Engineering</h3>
+          <p>
+            Coursework and hands-on learning in cloud data engineering concepts.
+          </p>
+        </div>
+
+        <a
+          class="text-link"
+          href="https://www.linkedin.com/in/abhishek-sharma-ba6163318/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View credential
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+
+      <!-- Programming & Web Development -->
+      <article class="certificate-card reveal reveal-delay-2">
+        <div class="certificate-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div>
+          <small>2026 • Certifications</small>
+          <h3>Programming & Web Development</h3>
+          <p>
+            Programming and web development certifications and learning credentials.
+          </p>
+        </div>
+
+        <a
+          class="text-link"
+          href="https://www.linkedin.com/in/abhishek-sharma-ba6163318/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View credential
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+    </div>
+
+    <p class="section-note">
+      <i class="fa-brands fa-linkedin"></i>
+      Click "View credential" to view my certifications on LinkedIn.
+    </p>
+
+  </div>
+</section>
+
+    <section class="section section-alt" id="terminal">
+      <div class="container terminal-section">
+        <div class="section-heading reveal">
+          <span class="section-kicker">06 / Interactive</span>
+          <h2 class="section-title">Talk to my <span>terminal</span></h2>
+          <p>Try commands like <code>about</code>, <code>skills</code>, <code>projects</code> or <code>contact</code>.</p>
+        </div>
+        <div class="terminal-window reveal" id="terminal-window">
+          <div class="terminal-bar"><span></span><span></span><span></span><strong>abhishek@portfolio:~</strong></div>
+          <div class="terminal-output" id="terminal-output" aria-live="polite"></div>
+          <form class="terminal-form" id="terminal-form">
+            <label for="terminal-input">&gt;</label>
+            <input id="terminal-input" autocomplete="off" spellcheck="false" placeholder="type 'help'..." aria-label="Terminal command">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-kicker">07 / Contact</span>
+          <h2 class="section-title left">Let's build something <span>useful.</span></h2>
+          <p>Have a project, internship opportunity or collaboration idea? Send a message and I'll get back to you.</p>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:abhisheksharma.h2005@gmail.com"><i class="fa-solid fa-envelope"></i><span><small>Email</small><strong>abhisheksharma.h2005@gmail.com</strong></span></a>
+            <a class="contact-item" href="https://github.com/Abhisheksharma825" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span><small>GitHub</small><strong>Abhisheksharma825</strong></span></a>
+            <a class="contact-item" href="https://www.linkedin.com/in/abhishek-sharma-ba6163318/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i><span><small>LinkedIn</small><strong>Abhishek Sharma</strong></span></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" id="contact-form" novalidate>
+          <div class="form-row">
+            <label>Name<input name="name" type="text" placeholder="Your name" required></label>
+            <label>Email<input name="email" type="email" placeholder="you@example.com" required></label>
+          </div>
+          <label>Subject<input name="subject" type="text" placeholder="Project / opportunity" required></label>
+          <label>Message<textarea name="message" rows="6" placeholder="Tell me a little about it..." required></textarea></label>
+          <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Send via Email</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="dots" id="dots" aria-label="Section navigation"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div><a class="logo" href="#hero">Abhishek<span>.</span></a><p>Build • Secure • Learn • Improve</p></div>
+      <div class="footer-social"><a href="https://github.com/Abhisheksharma825" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/abhishek-sharma-ba6163318/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="mailto:abhisheksharma.h2005@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year"></span> Abhishek Sharma</span><a href="#hero">Back to top ↑</a></div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <button class="modal-close" data-close-modal aria-label="Close project details"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-body">
+      <span class="section-kicker" id="modal-kicker">Project</span>
+      <h2 id="modal-title">Project title</h2>
+      <p id="modal-description"></p>
+      <div class="modal-tags" id="modal-tags"></div>
+      <div class="modal-actions" id="modal-actions"></div>
+    </div>
+  </dialog>
+
+  <dialog class="modal certificate-modal" id="certificate-modal" aria-labelledby="certificate-title">
+    <button class="modal-close" data-close-certificate aria-label="Close certificate"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-body">
+      <span class="section-kicker">Credential</span>
+      <h2 id="certificate-title">Certificate</h2>
+      <p id="certificate-message"></p>
+      <a class="btn" id="certificate-link" href="#" target="_blank" rel="noreferrer">Open PDF</a>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+  <script src="js/pro.js"></script>
+  <dialog class="cmdk" id="cmdk" aria-label="Command menu">
+    <input id="cmdk-input" placeholder="Jump to a section or run an action..." autocomplete="off" aria-label="Search commands">
+    <ul id="cmdk-list" role="listbox"></ul>
+    <p class="cmdk-hint"><kbd>↑</kbd><kbd>↓</kbd> navigate <kbd>Enter</kbd> select <kbd>Esc</kbd> close</p>
+  </dialog>
+</body>
+</html>

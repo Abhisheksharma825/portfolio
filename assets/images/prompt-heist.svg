@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#15114a"/></linearGradient><linearGradient id="c" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#818cf8"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <g opacity=".16" stroke="#22d3ee"><path d="M0 120h1600M0 240h1600M0 360h1600M0 480h1600M0 600h1600M0 720h1600M0 840h1600"/><path d="M120 0v1000M240 0v1000M360 0v1000M480 0v1000M600 0v1000M720 0v1000M840 0v1000M960 0v1000M1080 0v1000M1200 0v1000M1320 0v1000M1440 0v1000"/></g>
+  <rect x="220" y="190" width="1160" height="620" rx="36" fill="#050812" stroke="#22d3ee" stroke-width="4" opacity=".95"/>
+  <circle cx="270" cy="235" r="10" fill="#22d3ee"/><circle cx="305" cy="235" r="10" fill="#818cf8"/><circle cx="340" cy="235" r="10" fill="#64748b"/>
+  <text x="270" y="330" fill="#22d3ee" font-family="monospace" font-size="34">AI-VAULT // SECURITY TERMINAL</text>
+  <text x="270" y="425" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="88">PROMPT HEIST</text>
+  <text x="270" y="495" fill="#94a3b8" font-family="monospace" font-size="28">NATURAL LANGUAGE → GAME STATE → ESCAPE</text>
+  <rect x="270" y="555" width="760" height="72" rx="12" fill="#0b1020" stroke="#334155"/>
+  <text x="295" y="602" fill="#67e8f9" font-family="monospace" font-size="27">&gt; unlock door using NOVA-7</text>
+  <text x="270" y="710" fill="#818cf8" font-family="monospace" font-size="24">LEVEL 03 // GUARD-01 // DIGITAL CORE</text>
+  <circle cx="1250" cy="590" r="105" fill="none" stroke="url(#c)" stroke-width="10"/><circle cx="1250" cy="590" r="62" fill="none" stroke="#22d3ee" stroke-width="4"/><path d="M1250 480v220M1140 590h220" stroke="#22d3ee" stroke-width="4" opacity=".6"/>
+</svg>
